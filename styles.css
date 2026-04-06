@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 70vw;
+    margin: 0 auto;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.452)), url(./img/bg\ pic.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inputs button{
+    background-color: rgb(25, 144, 91);
+    border-radius: 3px;
+    border: none;
+    padding: 8px ;
+    margin: 0 5px;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    width: 124px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.inputs button:hover{
+    background-color: rgb(15, 128, 77);
+}
+.inputs button:active{
+    outline: 4px solid rgb(50, 149, 105);
+}
+.inputs input{
+    width: 100%;
+    border: none;
+    /* outline: none; */
+    transition: all 0.15 ease-in-out;
+    color: rgb(25, 144, 91);
+    font-weight: 500;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 12px ;
+    transition: all 0.5s ease-in-out;
+    
+}
+.inputs input:focus{
+    text-shadow: 0 0 10px rgb(25, 144, 91);
+    box-shadow: inset 0 0 20px black;
+}
+
+/* .task-grid{
+    margin-top: 40px;
+    outline: 2px solid rgb(25, 144, 91);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    font-weight: 600;
+    
+} */
+/* .task-grid div{
+    outline: 1px solid white;
+    padding: 8px 8px;
+} */
+.table{
+    margin-top: 47px;
+    width: 100%;
+    table-layout: auto;
+}
+th[scope="col"]:nth-child(4)  /* The Handle column */ {
+    width: 25%;
+}
+th[scope="col"]:nth-child(1), /* The # column */
+th[scope="col"]:nth-child(3){ /* The Date column */
+    width: 5%;
+    white-space: nowrap; /* Prevents dates or buttons from wrapping to 2 lines */
+}
+th[scope="col"]:nth-child(2){
+    width: auto;
+}
+tr th, tr td{
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 400;
+    /* outline: 2px solid rgb(25, 144, 91); */
+    outline: 2px solid white;
+    
+}
+.btn{
+    border: none;
+    color: white;
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.btn-del{
+    border: none;
+    color: white;
+    padding: 10px ;
+    background-color: rgb(254, 52, 52);
+}
+.btn-edit{
+    background-color: rgb(59, 59, 255);
+}
+.btn-up{
+    background-color: rgb(89, 195, 237);
+    color: black;
+}
+.btn-down{
+    background-color: rgb(37, 37, 37);
+}
+#update{
+    display: none;
+    width: 0px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}

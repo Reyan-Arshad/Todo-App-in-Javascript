@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="inputs">
+        <button class="clear">All Clear</button>
+        <input type="text" placeholder="Enter your task here" name="task_name" id="task_name">
+        <button class="submit" >Submit</button>
+        <button id="update" >Update</button>
+    </div>
+    <!-- <div class="task-grid">
+        <div class="serial">#</div>
+        <div class="tasks">Task</div>
+        <div class="date">Date</div>
+        <div class="handle">Handle</div>
+    </div> -->
+    <table class="table" style="border:2px inset #009F6B;border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Task</th>
+                <th scope="col">Date</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
